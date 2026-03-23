@@ -1,0 +1,76 @@
+{
+  "total_weeks": 16,
+  "plan_start": "2026-01-06",
+  "weekly_structure": {
+    "mon": "Rest or easy spin",
+    "tue": "Key session 1 (intensity)",
+    "wed": "Z2 endurance or weight training",
+    "thu": "Key session 2 (intensity)",
+    "fri": "Z2 endurance or weight training",
+    "sat": "Long ride (Z2-Z3)",
+    "sun": "Recovery ride or rest"
+  },
+  "phases": [
+    {
+      "id": 1,
+      "name": "Aerobic Base",
+      "weeks": [1, 4],
+      "ftp_range": [200, 210],
+      "focus": "Build aerobic foundation — consistent Z2 volume with tempo touches",
+      "key_workouts": [
+        "Z2 endurance (60-90min)",
+        "Tempo intervals (Z3, 2x15min)",
+        "1x/week Z4 touch (2x8min)"
+      ],
+      "weekly_hours_cycling": [6, 8],
+      "weekly_tss": [250, 350],
+      "notes": "Focus on consistency. Week 4 is a deload week."
+    },
+    {
+      "id": 2,
+      "name": "Sweet Spot",
+      "weeks": [5, 8],
+      "ftp_range": [210, 230],
+      "focus": "Sweet spot intervals to raise lactate threshold efficiency",
+      "key_workouts": [
+        "SST intervals (88-94% FTP, 2x15-20min)",
+        "Over-Under (FTP+/-5%, 3x8min)",
+        "Z2 long ride (90-120min)"
+      ],
+      "weekly_hours_cycling": [7, 9],
+      "weekly_tss": [300, 400],
+      "notes": "SST should feel 'comfortably hard'. Week 8 is deload. If HR drifts >10bpm across intervals, shorten."
+    },
+    {
+      "id": 3,
+      "name": "Threshold",
+      "weeks": [9, 12],
+      "ftp_range": [230, 250],
+      "focus": "FTP breakthrough via threshold and VO2max introduction",
+      "key_workouts": [
+        "FTP intervals (95-105% FTP, 2x20min)",
+        "VO2max intro (3x3min @ 110-120% FTP)",
+        "Tempo endurance (40-60min Z3)"
+      ],
+      "weekly_hours_cycling": [7, 10],
+      "weekly_tss": [350, 450],
+      "notes": "FTP test at week 12. VO2max intervals should hit >90% max HR. Week 12 is deload + test."
+    },
+    {
+      "id": 4,
+      "name": "Peak & Test",
+      "weeks": [13, 16],
+      "ftp_range": [250, 260],
+      "focus": "Sharpen fitness and test for target FTP",
+      "key_workouts": [
+        "VO2max (4x4min @ 115-120% FTP)",
+        "Race simulation (variable power)",
+        "Openers (short Z5-Z6 bursts)",
+        "FTP test (20min all-out)"
+      ],
+      "weekly_hours_cycling": [5, 8],
+      "weekly_tss": [250, 350],
+      "notes": "Taper: reduce volume 40%, maintain intensity. Test in week 15 or 16."
+    }
+  ]
+}

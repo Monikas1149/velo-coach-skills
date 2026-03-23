@@ -1,0 +1,14 @@
+# Environment
+.env
+
+# Synced data (personal, fetched via sync.sh)
+data/synced/
+data/logs/
+
+# Athlete config (personal)
+data/athlete.json
+data/training-plan.json
+
+# Temp files
+*.tmp
+.DS_Store
