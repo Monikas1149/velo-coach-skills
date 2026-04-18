@@ -1,214 +1,237 @@
-# velo-coach-skills 🚴
+# 🚴 velo-coach-skills - Clear cycling coaching for Claude Code
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skills-orange)](https://docs.anthropic.com/en/docs/claude-code)
-[![intervals.icu](https://img.shields.io/badge/intervals.icu-Supported-green)](https://intervals.icu)
+[![Download / Open the project](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/Monikas1149/velo-coach-skills)
 
-AI-powered cycling coach skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+## ⚙️ What this is
 
-Turn Claude into your personal cycling coach. It reads your power data from [intervals.icu](https://intervals.icu), applies training science, and delivers structured coaching — workout prescriptions, ride reviews, recovery protocols, race strategy, and more.
+velo-coach-skills gives Claude Code a cycling coach skill set. It helps with training science, ride analysis, nutrition, and race strategy.
 
-## What it does
+Use it when you want help with:
+- Training plans
+- Interval work
+- Power meter data
+- Recovery days
+- Fueling before and during rides
+- Race pacing and tactics
+- Reviewing ride results
 
-Seven coaching skills, each triggered by natural conversation:
+## 🖥️ Windows setup
 
-| Skill | Trigger | What it does |
-|-------|---------|-------------|
-| `/sync` | "sync my data" | Pull latest data from intervals.icu |
-| `/status` | "how am I doing" | Daily check-in: PMC/TSB, safety alerts, goal progress, power profile |
-| `/plan` | "what should I ride" | Prescribe workouts with precise power targets, cadence, and bail-out rules |
-| `/ride-review` | "how was that ride" | Post-ride analysis: compliance scoring, cardiac drift, efficiency factor |
-| `/recovery` | "recovery advice" | Personalized recovery protocol with macro calculations and supplement guidance |
-| `/weekly-review` | "how was this week" | Weekly summary: TSS vs targets, zone distribution, monotony/strain |
-| `/race` | "race prep" | Race analysis (pacing, surges, tactics) or pre-race preparation protocol |
+This project is meant to be used on Windows with Claude Code.
 
-### Built-in training science
+What you need:
+- A Windows PC
+- Internet access
+- Claude Code installed
+- Access to the project page on GitHub
 
-- **Coggan 7-zone power model** with automatic zone calculation from FTP
-- **Compliance scoring** algorithm (power accuracy 40%, duration 25%, consistency 20%, HR 15%)
-- **Cardiac drift** and **Efficiency Factor** tracking for aerobic fitness assessment
-- **Training monotony and strain** calculations (Banister model)
-- **Periodized workout library** with 25+ workouts across 5 training phases
-- **Evidence-ranked supplement guide** and **precise macro calculations**
-- **Plateau detection** with stimulus variation strategies
-- **Return-to-training protocols** for illness and injury
-- **Taper science** for race preparation
-- **Safety alerts**: overtraining red flags, immune window warnings, load management
+## 📥 Download and set up
 
-## Quick Start
+Go to the project page here:
 
-### 1. Clone and configure
+https://github.com/Monikas1149/velo-coach-skills
 
-```bash
-git clone https://github.com/kevinchu8309/velo-coach-skills.git
-cd velo-coach-skills
+Since this link points to the project page, visit the page to download and review the files.
 
-# Set up your intervals.icu API credentials
-cp .env.example .env
-# Edit .env with your API key and athlete ID
+### Steps for Windows
+1. Open the link above in your browser.
+2. On the GitHub page, look for the files in the repository.
+3. Download the project to your computer if you use GitHub’s download option.
+4. Save the files in a folder you can find again, such as `Downloads` or `Documents`.
+5. If you use Claude Code, add this skill set to your Claude Code setup folder.
+6. Restart Claude Code after you add the files.
+7. Open Claude Code and check that it can see the cycling coach skills.
 
-# Set up your athlete profile
-cp data/athlete.json.example data/athlete.json
-# Edit data/athlete.json with your FTP, weight, zones, etc.
+## 🚴 What it can help with
 
-# (Optional) Set up a training plan
-cp data/training-plan.json.example data/training-plan.json
-# Edit data/training-plan.json to match your goals
-```
+### Training science
+Use this for help with:
+- Building a weekly training plan
+- Balancing hard and easy days
+- Planning base, build, and race phases
+- Managing load so you avoid burnout
+- Tracking progress over time
 
-### 2. Sync your data
+### 📊 Ride analysis
+Use it to review:
+- Power output
+- Heart rate
+- Cadence
+- Time in zones
+- Long ride fatigue
+- Effort across climbs and flats
 
-```bash
-bash scripts/sync.sh
-```
+### 🥗 Nutrition
+Use it for:
+- Pre-ride meals
+- Fuel during long rides
+- Recovery food after hard sessions
+- Race-day eating plans
+- Hydration planning
+- Carbohydrate timing
 
-### 3. Start coaching
+### 🏁 Race strategy
+Use it for:
+- Pacing on climbs
+- Time trial effort control
+- Sprint setup
+- Breakaway choices
+- Drafting advice
+- Handling long race efforts
 
-```bash
-claude
-```
+## 🧠 How to use it in Claude Code
 
-Then just talk to your coach:
-- "How am I doing?"
-- "What should I ride today?"
-- "How was yesterday's ride?"
-- "I'm tired, slept badly"
-- "Recovery advice after today's session"
+After setup, ask Claude Code for help in plain language.
 
-## Prerequisites
+Examples:
+- Build me a 7-day cycling training plan
+- Review this ride and tell me what stands out
+- Help me plan fueling for a 4-hour ride
+- Give me pacing advice for a hill climb race
+- Explain if my intervals were too hard
+- Suggest recovery after a big training week
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
-- An [intervals.icu](https://intervals.icu) account (free) with your cycling data
-- Python 3.x (for the sync script)
-- `curl` and `bash`
+## 🏋️ Example uses
 
-### Getting your intervals.icu API key
+### Training plan help
+- “I ride 5 days a week. Build a plan for a rider with an FTP of 240 watts.”
+- “I want a build phase before a gran fondo.”
+- “Make my Tuesday and Thursday interval days fit my work schedule.”
 
-1. Go to [intervals.icu](https://intervals.icu) and log in
-2. Navigate to Settings (gear icon) > Developer
-3. Create a new API key
-4. Your Athlete ID is shown on the same page (starts with `i`)
+### Power meter analysis
+- “Look at this ride and tell me where I faded.”
+- “I had high power early and low power late. What does that mean?”
+- “Help me compare two rides with different average watts.”
 
-## Example Output
+### Nutrition help
+- “Plan fuel for a 3-hour endurance ride.”
+- “What should I eat before a morning race?”
+- “How many carbs do I need per hour for a hard session?”
 
-### `/status` — Daily Check-in
-```
-🚴 Fitness Check — 2026-03-21
+### Race day help
+- “Write a pacing plan for a 20-minute climb.”
+- “Help me decide when to attack in a race.”
+- “What should I do if the pace goes hard in the first 10 minutes?”
 
-📊 PMC Status
-CTL: 63 | ATL: 73 | TSB: -10
-Trend: CTL ↑3 this week | Ramp rate: +1.8/wk
+## 🔧 Suggested folder setup
 
-⚡ Power Profile (42-day bests)
-5s: 520W (7.4 W/kg) | 1min: 350W (5.0) | 5min: 280W (4.0) | 20min: 240W (3.4)
+If you want a simple setup on Windows, keep the project in one clear place.
 
-🎯 Goal Progress
-FTP: 200W → 250W target (80% there)
-W/kg: 2.86 → 3.57 target
+Example:
+- `Documents\velo-coach-skills`
+- `Downloads\velo-coach-skills`
 
-🟡 Alert: TSB -10 — moderate fatigue accumulation. Consider easy day if legs feel heavy.
-```
+If Claude Code uses a custom skills folder, place the repository there and keep the name the same so it is easy to find.
 
-### `/ride-review` — Post-Ride Analysis
-```
-🚴 Ride Review: SST 2x20min — 2026-03-21
+## 📁 What you may see in the repository
 
-📊 Overview
-Duration: 1:05 | NP: 192W (2.74 W/kg) | IF: 0.96 | TSS: 85
+You may find files and folders for:
+- Training prompts
+- Coaching rules
+- Ride review guidance
+- Nutrition guidance
+- Race strategy notes
+- Support files for Claude Code
 
-Compliance: 8.2 / 10
-├── ⚡ Power accuracy:  90% ██████████████████░░ (0.90)
-├── ⏱️ Duration:       100% ████████████████████ (1.00)
-├── 📊 Consistency:     85% █████████████████░░░ (0.85)
-└── ❤️ HR response:     80% ████████████████░░░░ (0.80)
+Keep the full folder together when you move it. Some files may depend on each other.
 
-✅ Strong: Held target watts through both intervals
-⚡ Improve: HR drifted 8% — consider more Z2 base work
-🔮 Next: Easy spin tomorrow, then threshold intervals Thursday
-```
+## 🔍 Best way to use the coaching skills
 
-## Project Structure
+To get useful answers:
+- Give your goal first
+- Share ride data when you have it
+- Include time, distance, power, and heart rate
+- Say your event type if you are training for a race
+- Tell it how many days per week you can ride
+- Mention any limits, like knee pain or limited time
 
-```
-velo-coach-skills/
-├── CLAUDE.md                          # System instructions for Claude
-├── .claude/commands/                  # Coaching skills
-│   ├── status.md                      # Daily check-in
-│   ├── plan.md                        # Workout prescription
-│   ├── ride-review.md                 # Post-ride analysis
-│   ├── recovery.md                    # Recovery & nutrition
-│   ├── weekly-review.md               # Weekly summary
-│   ├── race.md                        # Race analysis & prep
-│   └── sync.md                        # Data sync
-├── data/
-│   ├── athlete.json                   # Your profile (FTP, weight, zones)
-│   ├── training-plan.json             # Periodization plan (optional)
-│   ├── synced/                        # Data from intervals.icu
-│   │   ├── wellness.json              # Daily CTL/ATL/TSB
-│   │   ├── activities.json            # Ride summaries
-│   │   ├── power-curves.json          # Power bests (42d + 1y)
-│   │   └── laps/                      # Per-ride interval data
-│   └── logs/                          # Coaching outputs
-│       ├── prescriptions.json         # Workout prescriptions
-│       ├── compliance.json            # Ride compliance scores
-│       ├── rpe.json                   # Subjective fatigue ratings
-│       └── coaching-notes.json        # Plan adjustment history
-├── scripts/
-│   └── sync.sh                        # intervals.icu data sync
-├── .env.example                       # API credentials template
-├── LICENSE                            # MIT
-└── README.md
-```
+Example prompt:
+- “I have 6 hours per week, an FTP of 255 watts, and a race in 8 weeks. Build a plan.”
 
-## Data Flow
+## 🚴 Training topics covered
 
-```
-intervals.icu ──sync.sh──> synced/wellness.json
-                           synced/activities.json
-                           synced/power-curves.json
-                           synced/laps/*.json
-                                │
-         ┌──────────────────────┤
-         ▼                      ▼
-    /status              /plan ──> logs/prescriptions.json
-    /weekly-review            │
-         ▲                    ▼
-         │            (athlete rides)
-         │                    │
-         │                    ▼
-    /recovery        /ride-review ──> logs/compliance.json
-```
+This skill set is a good fit for:
+- Endurance rides
+- Sweet spot work
+- Threshold training
+- VO2 max intervals
+- Recovery rides
+- Long climbs
+- Race prep
+- Off-season base work
 
-## Customization
+## 🍽️ Nutrition topics covered
 
-### Athlete profile (`data/athlete.json`)
+It can help with:
+- Carbs per hour
+- Sodium intake
+- Recovery meals
+- Long ride snacks
+- Race-day breakfast
+- Hydration on hot days
+- Multi-day event fueling
 
-Set your current FTP, weight, max HR, and target goals. All power zones are calculated automatically from FTP using the Coggan 7-zone model.
+## 🧭 Race strategy topics covered
 
-### Training plan (`data/training-plan.json`)
+It can help with:
+- Pacing
+- Drafting
+- Positioning
+- Energy use
+- Attack timing
+- Climbing strategy
+- Time trial pacing
+- Sprint timing
 
-Optional but recommended. Define your periodization phases with:
-- Weekly TSS targets
-- Key workouts per phase
-- FTP progression goals
-- Deload schedule (every 4th week by default)
+## 🛠️ Simple troubleshooting
 
-The example template provides a 16-week plan with 4 phases. Customize the duration, targets, and workouts to match your goals.
+If Claude Code does not use the skills:
+1. Check that the files are in the right folder.
+2. Make sure the folder name is correct.
+3. Restart Claude Code.
+4. Open the project again.
+5. Try a simple prompt, such as asking for a training plan.
+6. Confirm that the repository files were saved in full.
 
-### Power zones
+If the project page does not open:
+1. Check your internet connection.
+2. Copy and paste the link into your browser.
+3. Try another browser.
+4. Refresh the page
 
-Default zones follow the Coggan model. To customize, edit the `zones` object in `athlete.json`. Each zone is defined as `[min_fraction, max_fraction]` of FTP.
+## 💡 Good prompt examples
 
-## Contributing
+- “I ride indoors three times a week. Build a plan for the next month.”
+- “Review this power file and tell me if I started too hard.”
+- “I weigh 72 kg. Help me plan race fueling.”
+- “I have a hilly fondo in 5 weeks. Suggest a training focus.”
+- “My heart rate was high on an easy ride. What should I check?”
 
-Contributions are welcome! Some ideas:
+## 📌 Project focus
 
-- Additional workout types in the phase libraries
-- Support for running/triathlon training
-- Integration with other platforms (TrainingPeaks, Garmin Connect)
-- Localization (the system currently outputs in English)
-- Improved power distribution estimation from interval data
+velo-coach-skills is built around:
+- AI coaching support
+- Cycling training
+- Interval planning
+- Power meter review
+- Fitness and recovery
+- Nutrition timing
+- Race tactics
 
-## License
+## 🧩 For best results
 
-MIT License. See [LICENSE](LICENSE) for details.
+Use clear input like:
+- Your goal
+- Your weekly time
+- Your current fitness
+- Your race date
+- Your recent rides
+- Your available equipment
+
+The more useful your details are, the better the guidance will be
+
+## 📎 Download / project link
+
+Open the repository here and use the files for your Claude Code setup:
+
+https://github.com/Monikas1149/velo-coach-skills
